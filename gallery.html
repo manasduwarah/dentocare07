@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dent O Care – Best Dental Clinic in North Lakhimpur</title>
+<meta name="description" content="Dent O Care Dental, Aesthetic & Implant Centre offers advanced dental treatments including implants, RCT, braces, and cosmetic dentistry in North Lakhimpur."/>
+<meta name="keywords" content="Best Dentist in North Lakhimpur, Dental Clinic in North Lakhimpur, Dental Implant Centre in Lakhimpur, Root Canal Treatment North Lakhimpur"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="Dent O Care – Best Dental Clinic in North Lakhimpur"/>
+<meta property="og:description" content="Advanced dental care including implants, RCT, braces & cosmetic dentistry. Trusted by 150+ patients in North Lakhimpur, Assam."/>
+<meta property="og:type" content="website"/>
+<link rel="canonical" href="https://dentocare.in"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero">
+      <img src="logo.jpg" alt="Dent O Care Logo" class="nav-logo-img"/>
+      <div class="nav-logo-text">
+        <span class="logo-main">DENT O CARE</span>
+        <span class="logo-sub">Dental, Aesthetic &amp; Implant Centre</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="btn-nav" href="appointment.html">📅 Book Now</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="doctors.html">Doctors</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="contact.html">Contact</a>
+  <a class="btn btn-primary" href="appointment.html">📅 Book Appointment</a>
+</div>
+
+
+<!-- ===== GALLERY STRIP ===== -->
+<section class="page-top-spacing" id="gallery-strip">
+  <div class="container">
+    <div class="gallery-strip-header">
+      <span class="section-badge">Our Clinic</span>
+      <h2>A Glimpse Inside Dent O Care</h2>
+      <p>Modern equipment, a warm waiting area, and a team that cares — click any photo to expand</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-thumb" onclick="openLightbox(0)">
+        <img src="gallery3.jpg" alt="Dent O Care clinic exterior – North Lakhimpur"/>
+        <div class="gallery-thumb-label">Clinic Exterior</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(1)">
+        <img src="gallery2.jpg" alt="Dental treatment room with modern chair"/>
+        <div class="gallery-thumb-label">Treatment Room</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(2)">
+        <img src="gallery4.jpg" alt="Reception desk and waiting area"/>
+        <div class="gallery-thumb-label">Reception</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(3)">
+        <img src="gallery5.jpg" alt="Comfortable patient waiting area"/>
+        <div class="gallery-thumb-label">Waiting Area</div>
+      </div>
+      <div class="gallery-thumb" onclick="openLightbox(4)">
+        <img src="gallery1.jpg" alt="Doctor's certificates and awards wall"/>
+        <div class="gallery-thumb-label">Certifications &amp; Awards</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+  <button class="lightbox-prev" onclick="lightboxNav(-1)" aria-label="Previous">&#8249;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Clinic photo"/>
+  <button class="lightbox-next" onclick="lightboxNav(1)" aria-label="Next">&#8250;</button>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+  <button class="lightbox-prev" onclick="lightboxNav(-1)" aria-label="Previous">&#8249;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Clinic photo"/>
+  <button class="lightbox-next" onclick="lightboxNav(1)" aria-label="Next">&#8250;</button>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+
+<!-- ===== HOW WE TREAT OUR PATIENTS ===== -->
+<section id="treatment">
+  <div class="container">
+    <div class="section-header center fade-up">
+      <span class="section-badge">In Action</span>
+      <h2 class="section-title">How We Treat Our Patients</h2>
+      <p class="section-subtitle">A behind-the-scenes look at the care, precision, and technology that goes into every treatment at Dent O Care.</p>
+    </div>
+    <div class="treatment-layout fade-up">
+      <!-- Main viewer -->
+      <div class="treatment-main">
+        <img class="treatment-main-img" id="treatMainImg" src="treat1.jpg" alt="Patient smile transformation"/>
+        <button class="treat-arrow left" id="treatPrev" aria-label="Previous">&#8249;</button>
+        <button class="treat-arrow right" id="treatNext" aria-label="Next">&#8250;</button>
+        <div class="treat-caption">
+          <h4 id="treatTitle">Smile Transformation</h4>
+          <p id="treatDesc">Before and after – a complete smile restoration using implants and cosmetic dentistry by Dr. Kaushik Borpatra.</p>
+        </div>
+      </div>
+      <!-- Sidebar thumbnails -->
+      <div class="treatment-sidebar">
+        <div class="treat-thumb active" data-i="0" onclick="treatGoTo(0)">
+          <img src="treat1.jpg" alt="Smile transformation"/>
+        </div>
+        <div class="treat-thumb" data-i="1" onclick="treatGoTo(1)">
+          <img src="treat2.jpg" alt="Surgical implant procedure"/>
+        </div>
+        <div class="treat-thumb" data-i="2" onclick="treatGoTo(2)">
+          <img src="treat3.jpg" alt="Dental procedure in progress"/>
+        </div>
+        <div class="treat-thumb" data-i="3" onclick="treatGoTo(3)">
+          <img src="treat4.jpg" alt="UV light dental bonding treatment"/>
+        </div>
+        <div class="treat-thumb" data-i="4" onclick="treatGoTo(4)">
+          <img src="treat5.jpg" alt="Dental anaesthesia injection"/>
+        </div>
+        <div class="treat-thumb" data-i="5" onclick="treatGoTo(5)">
+          <img src="treat6.jpg" alt="Tooth extraction procedure"/>
+        </div>
+        <div class="treat-thumb" data-i="6" onclick="treatGoTo(6)">
+          <img src="treat7.jpg" alt="Intraoral camera diagnosis"/>
+        </div>
+        <div class="treat-thumb" data-i="7" onclick="treatGoTo(7)">
+          <img src="treat8.jpg" alt="Braces orthodontic treatment"/>
+        </div>
+        <div class="treat-thumb" data-i="8" onclick="treatGoTo(8)">
+          <img src="treat9.jpg" alt="Dental crown restoration"/>
+        </div>
+        <div class="treat-thumb" data-i="9" onclick="treatGoTo(9)">
+          <img src="treat10.jpg" alt="Intraoral camera full mouth scan"/>
+        </div>
+      </div>
+    </div>
+    <!-- Dots -->
+    <div class="treat-dots">
+      <button class="treat-dot active" data-i="0" onclick="treatGoTo(0)" aria-label="Photo 1"></button>
+      <button class="treat-dot" data-i="1" onclick="treatGoTo(1)" aria-label="Photo 2"></button>
+      <button class="treat-dot" data-i="2" onclick="treatGoTo(2)" aria-label="Photo 3"></button>
+      <button class="treat-dot" data-i="3" onclick="treatGoTo(3)" aria-label="Photo 4"></button>
+      <button class="treat-dot" data-i="4" onclick="treatGoTo(4)" aria-label="Photo 5"></button>
+      <button class="treat-dot" data-i="5" onclick="treatGoTo(5)" aria-label="Photo 6"></button>
+      <button class="treat-dot" data-i="6" onclick="treatGoTo(6)" aria-label="Photo 7"></button>
+      <button class="treat-dot" data-i="7" onclick="treatGoTo(7)" aria-label="Photo 8"></button>
+      <button class="treat-dot" data-i="8" onclick="treatGoTo(8)" aria-label="Photo 9"></button>
+      <button class="treat-dot" data-i="9" onclick="treatGoTo(9)" aria-label="Photo 10"></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">DENT O CARE</div>
+        <div class="footer-logo-sub">Dental, Aesthetic &amp; Implant Centre</div>
+        <p>Providing modern, painless, and affordable dental care to the people of North Lakhimpur and surrounding areas of Assam.</p>
+        <div class="footer-rating">
+          <span class="stars">★★★★★</span>
+          <span>5.0 · 150+ Google Reviews</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="appointment.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Dental Implants</a></li>
+          <li><a href="services.html">Root Canal Treatment</a></li>
+          <li><a href="services.html">Teeth Cleaning</a></li>
+          <li><a href="services.html">Braces &amp; Orthodontics</a></li>
+          <li><a href="services.html">Cosmetic Dentistry</a></li>
+          <li><a href="services.html">Smile Designing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Girls' School Road</a></li>
+          <li><a href="contact.html">North Lakhimpur, Assam 787001</a></li>
+          <li><a href="tel:+918428425878">+91 84284 25878</a></li>
+          <li><a href="contact.html">View on Google Maps</a></li>
+        </ul>
+        <a class="footer-call-btn" href="tel:+918428425878">📞 Call Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Dent O Care – Dental, Aesthetic &amp; Implant Centre. All rights reserved.</p>
+      <p>Girls' School Road, North Lakhimpur, Assam 787001</p>
+      <p style="margin-top: 12px; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em; color: rgba(255,255,255,0.7);">
+        DESIGNED AND DEVELOPED BY MANAS DUWARAH<br>
+        <span style="font-size: 0.75rem; letter-spacing: 0.04em; color: rgba(255,255,255,0.5); display: inline-block; margin-top: 8px; line-height: 1.6;">
+          FOR ANY QUERIES CONTACT -<br>
+          Gmail - manasduwarah54@gmail.com<br>
+          Contact No - 8099281183
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
