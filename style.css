@@ -156,7 +156,7 @@ a { text-decoration: none; color: inherit; }
 #doctor { padding: 96px 0; background: var(--white); }
 .doctor-card { display: grid; grid-template-columns: 340px 1fr; gap: 56px; align-items: start; background: var(--off-white); border-radius: 20px; overflow: hidden; border: 1px solid var(--border); }
 .doctor-image { position: relative; height: 100%; min-height: 380px; background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent-light) 100%); display: flex; align-items: flex-end; justify-content: center; }
-.doctor-avatar { width: 100%; height: 380px; object-fit: cover; object-position: top; }
+.doctor-avatar { width: 100%; height: 100%; min-height: 380px; object-fit: cover; object-position: center; }
 .doctor-avatar-placeholder { width: 200px; height: 200px; border-radius: 50%; background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); display: flex; align-items: center; justify-content: center; margin: 80px auto; }
 .doctor-avatar-placeholder svg { width: 100px; height: 100px; color: rgba(255,255,255,0.6); }
 .doctor-info { padding: 48px 48px 48px 0; }
@@ -318,6 +318,7 @@ a { text-decoration: none; color: inherit; }
   .about-grid, .doctor-card, .location-grid, .contact-grid { grid-template-columns: 1fr; }
   .doctor-card { grid-template-columns: 1fr; }
   .doctor-image { min-height: 280px; }
+  .doctor-avatar { min-height: 280px; }
   .doctor-info { padding: 32px 28px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .hero-content { margin: 0 auto; }
